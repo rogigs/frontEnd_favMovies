@@ -18,27 +18,41 @@
                     <img class="icon" id="image-main" src="images/director-chair.png" alt="" srcset="">
                     <h1>Home</h1>
                 </a>
-                <a href="#">
+                <a href="sobre.html">
                     <img class="icon" id="image-main" src="images/clapperboard.png" alt="" srcset="">
                     <h1>Sobre nós</h1>
                 </a>
-                <a href="iniciar.html">
-                    <img class="icon" id="image-main" src="images/tickets.png" alt="" srcset="">
-                    <h1>Iniciar sessão</h1>
+                <a href="catalogo.html">
+                    <img class="icon" id="image-main" src="images/popcorn.png" alt="" srcset="">
+                    <h1>Ver catálogo</h1>
                 </a>
             </div>
         </nav>
 
         <section class="container-content">
-            <h1 align="center">TEXTO ENROME</h1>
-            <p>dviasdviabvidvbuiavbsdvbuoabuosdobaobsdboa</p>
-            <p>dviasdviabvidvbuiavbsdvbuoabuosdobaobsdboa</p>
-            <p>dviasdviabvidvbuiavbsdvbuoabuosdobaobsdboa</p>
-            <p>dviasdviabvidvbuiavbsdvbuoabuosdobaobsdboa</p>
-            <p>dviasdviabvidvbuiavbsdvbuoabuosdobaobsdboa</p>
-            <p>dviasdviabvidvbuiavbsdvbuoabuosdobaobsdboa</p>
-            <p>dviasdviabvidvbuiavbsdvbuoabuosdobaobsdboa</p>
+
+            <div class="container-user">
+                <div>
+                    <img class="user" src="images/camera.png" alt="">
+                </div>
+                <h1>NOME DO USER</h1>
+            </div>
+
+            <div class="container-change">
+                <button id="films-user" onclick="loadListFilms()">Filmes</button>
+                <button id="series-user" onclick="loadListSeries()">Séries</button>
+            </div>
+            <div id="list-user-films" class="container-card">
+
+            </div>
+
+            <div id="list-user-series" class="container-card">
+
+            </div>
         </section>
+
+        <span id="click" hidden></span>
+        <script src="js/usuario.js"></script>
 
     </main>
 </body>

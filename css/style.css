@@ -3,13 +3,6 @@
     src: url("./fonts/Balsamiq_Sans/BalsamiqSans-Regular.ttf");
 }
 
-:root {
-    --textColor: #fff;
-    --backgroundColor: #1d2d3c;
-    --backgroundColor2: #2d3f50;
-    --decorationColor: #e8c220;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -18,10 +11,14 @@
 body, html {
     width: 100%;
     height: 100%;
-    font-family: balsamiq;
-    background-color: #02000D;
+    font-family: "Raleway";
     color: #fff;
+    background-image: url('/images/main.jpg');
+    background-size: 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
+
 
 input {
     height: 20px;
@@ -32,11 +29,20 @@ input {
 }
 
 button {
-    height: 30px;
+    width: 100%;
+    height: 35px;
     font-size: 17px;
     padding: 5px;
-    border-radius: 10px;
     outline: transparent;
+    background-image: linear-gradient(to right, #F20505, #A60303);
+    border: 1px solid #02000D;
+    color: #fff;
+    transition: color 0.5s;
+}
+
+button:hover {
+    color: #000;
+    box-shadow: 2px 2px 2px 1px #02000D;
 }
 
 .container-width {
@@ -62,13 +68,6 @@ p {
 }
 
 /* index.html */
-
-.container-main .container-image #image-main {
-    display: table;
-    width: 100%;
-    height: 100vh;
-    color: white;
-}
 
 .container-nav {
     position: absolute;
@@ -118,22 +117,47 @@ p {
 
 /* lista */
 
+.container-content .container-change {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.container-content .container-change button:first-child {
+    background-image: linear-gradient(to left, #F20505, #A60303);
+}
+
 .container-content .container-card {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /* background-color: #e8c220; */
 }
 
 .container-content .container-card .card {
-    width: 350px;
+    width: 300px;
+    margin: 10px;
 }
 
 .container-content .card img {
     height: 200px;
     width: 200px;
     margin-left: 20%;
+}
+
+.container-user {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.container-user .user {
+    height: 150px;
+    width: 150px;
+}
+
+.container-user h1 {
+    margin-top: 50px;
+    margin-left: 25px;
 }
 
 /*  Medias */
