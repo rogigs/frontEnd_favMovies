@@ -99,6 +99,21 @@ p {
 }
 
 /* Sobre nós */
+.container-content #aboutUs{
+    text-align: justify;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+    background-color: rgba(00, 00, 00, 0.60);
+    padding: 10px;
+    border-radius: 25px ;    
+}
+.container-content h1{
+    background-color: rgba(00, 00, 00, 0.60);
+    border-radius: 25px ;
+    width: 30%;
+    margin-left: 35%;
+}
 
 /* Iniciar sessão */
 
