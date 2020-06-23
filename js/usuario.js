@@ -1,9 +1,10 @@
 var click = document.getElementById("click")
+var id = localStorage.getItem('id')
 
 function loadListFilms() {
     click.innerHTML = "1"
 
-    fetch(`http://localhost:4000/films/1`, {
+    fetch(`http://localhost:4000/films/${id}`, {
         method: 'GET',
         headers: { "Content-Type": "application/json" },
     })
@@ -13,9 +14,9 @@ function loadListFilms() {
         .then(function (film) {
             var lenghtArray = film.length
             console.log(film);
-            
 
-            for (let i = 0; i < lenghtArray ; i++) {
+
+            for (let i = 0; i < lenghtArray; i++) {
                 document.getElementById("list-user-films").innerHTML += `
                 <article class="card">
                 <img class="poster"
@@ -37,7 +38,7 @@ function loadListFilms() {
 function loadListSeries() {
     click.innerHTML = "2"
 
-    fetch(`http://localhost:4000/series/1`, {
+    fetch(`http://localhost:4000/series/${id}`, {
         method: 'GET',
         headers: { "Content-Type": "application/json" },
     })
@@ -46,7 +47,7 @@ function loadListSeries() {
         })
         .then(function (serie) {
             var lenghtArray = serie.length
-            for (let i = 0; i < lenghtArray ; i++) {
+            for (let i = 0; i < lenghtArray; i++) {
                 document.getElementById("list-user-series").innerHTML += `
                 <article class="card">
                 <img class="poster"
@@ -70,16 +71,19 @@ function verifyClick(type) {
     if (contentSpan == 1) {
         document.getElementById("films-user").disabled = true;
         document.getElementById("series-user").disabled = false;
-        document.getElementById("films-user").style.color = "#000" 
-        document.getElementById("series-user").style.color = "#fff" 
+        document.getElementById("films-user").style.color = "#000"
+        document.getElementById("series-user").style.color = "#fff"
         document.getElementById("list-user-series").innerHTML = ""
     }
     if (contentSpan == 2) {
         document.getElementById("series-user").disabled = true;
         document.getElementById("films-user").disabled = false;
-        document.getElementById("series-user").style.color = "#000" 
-        document.getElementById("films-user").style.color = "#fff" 
+        document.getElementById("series-user").style.color = "#000"
+        document.getElementById("films-user").style.color = "#fff"
         document.getElementById("list-user-films").innerHTML = ""
     }
 }
 
+window.onload = () => {
+    document.getElementById("name-user").innerHTML = localStorage.getItem('User')
+}
