@@ -19,7 +19,6 @@ body, html {
     background-attachment: fixed;
 }
 
-
 input {
     height: 20px;
     font-size: 17px;
@@ -60,12 +59,27 @@ button:hover {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 150px;
+    margin-bottom: 50px;
     font-size: 20px;
 }
 
 p {
     line-height: 30px;
     text-shadow: 2px 2px black;
+}
+
+.container-content h1 {
+    font-size: 80px;
+    font-style: italic;
+    font-style: italic;
+    background: -webkit-linear-gradient(#fff, #D9AE30);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
 }
 
 /* index.html */
@@ -97,6 +111,18 @@ p {
     margin-top: 10px;
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.container-content #letreiro {
+    height: 120px;
+}
+
+.container-content h3 {
+    margin-left: 20px;
+    font-style: italic;
+    background: -webkit-linear-gradient(#fff, #D9AE30);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Sobre nós */
@@ -137,12 +163,20 @@ p {
 .container-content .container-card .card {
     width: 300px;
     margin: 10px;
+    margin-bottom: 30px;
+    /* background-color: blueviolet; */
 }
 
 .container-content .card img {
-    height: 200px;
-    width: 200px;
+    min-height: 300px;
+    max-width: 250px;
     margin-left: 20%;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+.container-content .card h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .container-user {

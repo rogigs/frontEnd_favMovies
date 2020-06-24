@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="https://fontmeme.com/permalink/200624/d1210ee3d051166f9ee2dbc66af6c465.png" />
     <link rel="stylesheet" href="css/style.css">
     <title>Fav</title>
 </head>
@@ -32,58 +32,20 @@
 
         <section class="container-content">
             <div class="container-change">
-                <button>Filmes</button>
-                <button>Séries</button>
+                <button id="films-catalog" onclick="loadListFilms()">Filmes</button>
+                <button id="series-catalog" onclick="loadListSeries()">Séries</button>
             </div>
-            <div class="container-card">
-                <article class="card">
-                    <img class="poster"
-                        src="https://img.elo7.com.br/product/zoom/264FCC6/big-poster-filme-batman-o-cavaleiro-das-trevas-lo02-90x60-cm-batman.jpg"
-                        alt="" srcset="">
-                    <h2>Batman</h2>
-                    <p>Title:</p>
-                    <p>Ano: 2019</p>
-                    <p>Atores: </p>
-                    <p>Descrição:</p>
-                </article>
+            <div id="list-catalog-films" class="container-card">
 
-                <article class="card">
-                    <img class="poster"
-                        src="https://img.elo7.com.br/product/zoom/264FCC6/big-poster-filme-batman-o-cavaleiro-das-trevas-lo02-90x60-cm-batman.jpg"
-                        alt="" srcset="">
-                    <h2>Batman</h2>
-                    <p>Title:</p>
-                    <p>Ano: 2019</p>
-                    <p>Atores: </p>
-                    <p>Descrição:</p>
-                </article>
+            </div>
 
-                <article class="card">
-                    <img class="poster"
-                        src="https://img.elo7.com.br/product/zoom/264FCC6/big-poster-filme-batman-o-cavaleiro-das-trevas-lo02-90x60-cm-batman.jpg"
-                        alt="" srcset="">
-                    <h2>Batman</h2>
-                    <p>Title:</p>
-                    <p>Ano: 2019</p>
-                    <p>Atores: </p>
-                    <p>Descrição:</p>
-                </article>
+            <div id="list-catalog-series" class="container-card">
 
-                <article class="card">
-                    <img class="poster"
-                        src="https://img.elo7.com.br/product/zoom/264FCC6/big-poster-filme-batman-o-cavaleiro-das-trevas-lo02-90x60-cm-batman.jpg"
-                        alt="" srcset="">
-                    <h2>Batman</h2>
-                    <p>Title:</p>
-                    <p>Ano: 2019</p>
-                    <p>Atores: </p>
-                    <p>Descrição:</p>
-                </article>
-                </article>
-
-                <script src="js/catalogo.js"></script>
             </div>
         </section>
+
+        <span id="click-catalog" hidden></span>
+        <script src="js/catalogo.js"></script>
     </main>
 </body>
 

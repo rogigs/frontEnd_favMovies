@@ -13,15 +13,14 @@ function loadListFilms() {
         })
         .then(function (film) {
             var lenghtArray = film.length
-            console.log(film);
 
 
             for (let i = 0; i < lenghtArray; i++) {
                 document.getElementById("list-user-films").innerHTML += `
                 <article class="card">
                 <img class="poster"
-                    src="https://img.elo7.com.br/product/zoom/264FCC6/big-poster-filme-batman-o-cavaleiro-das-trevas-lo02-90x60-cm-batman.jpg"
-                    alt="" srcset="">
+                    src="${film[i].POSTER}" alt="POSTER"
+                >
                 <h2 align="center">${film[i].TITLE}</h2>
                 <p>Ano: ${film[i].YEAR_FILM}</p>
                 <p>Atores: ${film[i].ACTORS}</p>
@@ -51,8 +50,8 @@ function loadListSeries() {
                 document.getElementById("list-user-series").innerHTML += `
                 <article class="card">
                 <img class="poster"
-                    src="https://img.elo7.com.br/product/zoom/264FCC6/big-poster-filme-batman-o-cavaleiro-das-trevas-lo02-90x60-cm-batman.jpg"
-                    alt="" srcset="">
+                    src="${serie[i].POSTER}" alt="POSTER"
+                >
                 <h2 align="center">${serie[i].TITLE}</h2>
                 <p>Ano: ${serie[i].YEAR_SERIE}</p>
                 <p>Atores: ${serie[i].ACTORS}</p>
@@ -85,5 +84,6 @@ function verifyClick(type) {
 }
 
 window.onload = () => {
+    loadListFilms()
     document.getElementById("name-user").innerHTML = localStorage.getItem('User')
 }

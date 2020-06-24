@@ -1,4 +1,5 @@
 var login = document.getElementById("login")
+var criar = document.getElementById("criar")
 var form = document.getElementById("form-login")
 
 function valida(user) {
@@ -34,5 +35,3 @@ login.addEventListener("click", (e) => {
 
         })
 })
-
-
