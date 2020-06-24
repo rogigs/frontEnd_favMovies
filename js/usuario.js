@@ -19,8 +19,7 @@ function loadListFilms() {
                 document.getElementById("list-user-films").innerHTML += `
                 <article class="card">
                 <img class="poster"
-                    src="${film[i].POSTER}" alt="POSTER"
-                >
+                    src="${film[i].POSTER}" alt="POSTER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
                 <h2 align="center">${film[i].TITLE}</h2>
                 <p>Ano: ${film[i].YEAR_FILM}</p>
                 <p>Atores: ${film[i].ACTORS}</p>
@@ -50,8 +49,7 @@ function loadListSeries() {
                 document.getElementById("list-user-series").innerHTML += `
                 <article class="card">
                 <img class="poster"
-                    src="${serie[i].POSTER}" alt="POSTER"
-                >
+                    src="${serie[i].POSTER}" alt="POSTER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
                 <h2 align="center">${serie[i].TITLE}</h2>
                 <p>Ano: ${serie[i].YEAR_SERIE}</p>
                 <p>Atores: ${serie[i].ACTORS}</p>
