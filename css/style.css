@@ -40,8 +40,9 @@ button {
 }
 
 button:hover {
-    color: #000;
+    
     box-shadow: 2px 2px 2px 1px #02000D;
+    background-image: linear-gradient(to right, #A60303, #A60303);
 }
 
 .container-width {
